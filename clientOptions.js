@@ -15,6 +15,7 @@ const intents = [
     IntentsBitField.Flags.MessageContent,
     IntentsBitField.Flags.GuildVoiceStates,
     IntentsBitField.Flags.Guilds,
+    IntentsBitField.Flags.GuildMessages,
 ];
 
 module.exports = { partials, intents };
