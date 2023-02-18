@@ -3,6 +3,8 @@
 node_modules
 .env
 
+deploy.sh
+
 actions/*
 !actions/.gitkeep
 probes/*
