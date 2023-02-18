@@ -1,0 +1,9 @@
+.idea
+*.iml
+node_modules
+.env
+
+actions/*
+!actions/.gitkeep
+probes/*
+!probes/.gitkeep

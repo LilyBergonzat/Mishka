@@ -1,0 +1,14 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.14.0",
+    "@lilywonhalf/pretty-logger": "^2.0.2",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
+}
