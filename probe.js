@@ -3,7 +3,7 @@ const { Logger } = require('@lilywonhalf/pretty-logger');
 const config = require('./probesConfig');
 
 const performActionIfAny = async (snowflake) => {
-    if (!fs.existsSync(`./actions/${snowflake}.js`)) {
+    if (!fs.existsSync(`actions/${snowflake}.js`)) {
         return;
     }
 
