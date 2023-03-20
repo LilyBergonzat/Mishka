@@ -1,3 +1,10 @@
+const { Collection, Client, Guild, TextBasedChannelFields, TextChannel } = require('discord.js');
+
+/**
+ * @param {Collection} collection
+ * @param key
+ * @returns {*}
+ */
 const getCollectionItem = (collection, key) => {
     const item = collection.get(key);
 
@@ -8,6 +15,11 @@ const getCollectionItem = (collection, key) => {
     return item;
 };
 
+/**
+ * @param {Client} client
+ * @param {string} snowflake
+ * @returns {Guild}
+ */
 const getGuild = (client, snowflake) => {
     try {
         return getCollectionItem(client.guilds.cache, snowflake);
@@ -16,6 +28,11 @@ const getGuild = (client, snowflake) => {
     }
 };
 
+/**
+ * @param {Guild} guild
+ * @param {string} snowflake
+ * @returns {Promise<TextBasedChannelFields & TextChannel>}
+ */
 const getChannel = async (guild, snowflake) => {
     try {
         return getCollectionItem(await guild.channels.fetch(), snowflake);
